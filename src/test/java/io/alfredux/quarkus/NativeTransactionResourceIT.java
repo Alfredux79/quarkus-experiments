@@ -3,7 +3,7 @@ package io.alfredux.quarkus;
 import io.quarkus.test.junit.NativeImageTest;
 
 @NativeImageTest
-public class NativeExampleResourceIT extends ExampleResourceTest {
+public class NativeTransactionResourceIT extends TransactionResourceTest {
 
     // Execute the same tests but in native mode.
 }
