@@ -1,13 +1,16 @@
 package io.alfredux.quarkus.domain.model;
 
+import lombok.Getter;
+
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Getter
 public class Transaction {
 
-    private Double amount;
-
     private UUID uuid;
+
+    private Double amount;
 
     private LocalDateTime timestamp;
 
@@ -21,15 +24,4 @@ public class Transaction {
         return new Transaction(amount, LocalDateTime.now(), UUID.randomUUID());
     }
 
-    public Double getAmount() {
-        return amount;
-    }
-
-    public UUID getUuid() {
-        return uuid;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
-    }
 }
